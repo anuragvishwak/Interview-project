@@ -3,49 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interview Round</title>
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
   </head>
-  <body class="w-full overflow-x-hidden">
+  <body class="w-full">
     <div
-  class="w-full shadow-[0_4px_6px_rgba(0,0,0,0.1)] bg-white flex items-center justify-between px-5 md:px-10 lg:px-20 py-3"
->
-  <!-- Logo -->
-  <img class="h-8" src="./LogoNavbar.png" />
+      class="w-full shadow-lg fixed z-10 bg-white flex items-center justify-between px-5 md:px-10 lg:px-20 py-3"
+    >
+      <img class="h-8" src="./LogoNavbar.png" />
 
-  <!-- Navbar Buttons -->
-  <div class="hidden sm:flex text-sm sm:text-base sm:w-7/12 md:w-6/12 lg:w-5/12 xl:w-4/12 text-gray-500 items-center justify-between">
-    <button>Contact Us</button>
-    <button>Products</button>
-    <button>About Us</button>
-    <button class="py-1.5 border px-4 rounded-lg border border-gray-400">
-      My Account
-    </button>
-  </div>
+      <div
+        class="hidden sm:flex text-sm sm:text-base sm:w-7/12 md:w-6/12 lg:w-5/12 xl:w-4/12 text-gray-500 items-center justify-between"
+      >
+        <button>Contact Us</button>
+        <button>Products</button>
+        <button>About Us</button>
+        <button class="py-1.5 border px-4 rounded-lg border border-gray-400">
+          My Account
+        </button>
+      </div>
 
-  <!-- Mobile Menu Button (Hidden on Larger Screens) -->
-  <button class="sm:hidden">
-    <!-- Add a hamburger menu icon here -->
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-    </svg>
-  </button>
-</div>
+      <button class="sm:hidden">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </div>
 
     <div
-      class="bg-cover  bg-center sm:flex justify-between"
+      class="bg-cover bg-center pt-16 sm:flex justify-between"
       style="background-image: url('./backgroundImage.png')"
     >
-      <div class="pl-7 md:pl-12 lg:pl-20 xl:pl-28 py-6 md:py-10 lg:py-14 xl:py-16">
-        <p class="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold">A Bridge between you and your</p>
-        <div class="flex items-center">
-          <p class="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold">financial</p>
-          <p class="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl ml-3 font-semibold text-blue-600">decisions</p>
+      <div
+        class="p-7 md:pl-12 lg:pl-20 xl:pl-28 py-6 md:py-10 lg:py-14 xl:py-16"
+      >
+        <p 
+        style="font-family: 'Source Serif 4', serif;"
+          class="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl "
+        >
+          A Bridge between you and your
+        </p>
+        <div style="font-family: 'Source Serif 4', serif;" class="flex items-center">
+          <p
+            class="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold"
+          >
+            financial
+          </p>
+          <p
+            class="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl ml-3 font-semibold text-blue-600"
+          >
+            decisions
+          </p>
         </div>
-        <p class="text-gray-500 text-sm md:text-base mt-4 sm:mt-6 w-auto   sm:w-8/12">
+        <p
+          class="text-gray-500 text-sm md:text-base mt-4 sm:mt-6 w-auto sm:w-8/12"
+        >
           Your all-in-one destination for expert investment guidance and
           streamlined portfolio management solutions
         </p>
@@ -62,31 +93,42 @@
           </button>
         </div>
 
-        <div class="flex items-center sm:grid grid-cols-4 gap-5">
+        <div class="flex items-center">
           <div class="p-3 sm:p-5 text-center rounded-xl shadow-lg bg-white">
-            <p class="text-sm sm:text-lg md:text-xl font-bold text-blue-600">80,000+</p>
+            <p class="text-sm sm:text-lg md:text-xl font-bold text-blue-600">
+              80,000+
+            </p>
             <p class="text-sm sm:text-base text-gray-400">Company Data</p>
           </div>
           <div class="p-3 sm:p-5 text-center bg-white">
-            <p class="text-sm sm:text-lg md:text-xl font-bold text-gray-500">500+</p>
+            <p class="text-sm sm:text-lg md:text-xl font-bold text-gray-500">
+              500+
+            </p>
             <p class="text-sm sm:text-base text-gray-400">Database</p>
           </div>
           <div class="p-3 sm:p-5 text-center bg-white">
-            <p class="text-sm sm:text-lg md:text-xl font-bold text-gray-500">100+</p>
+            <p class="text-sm sm:text-lg md:text-xl font-bold text-gray-500">
+              100+
+            </p>
             <p class="text-sm sm:text-base text-gray-400">Industry</p>
           </div>
           <div class="p-3 sm:p-5 text-center bg-white">
-            <p class="text-sm sm:text-lg md:text-xl font-bold text-gray-500">30 Years</p>
+            <p class="text-sm sm:text-lg md:text-xl font-bold text-gray-500">
+              30 Years
+            </p>
             <p class="text-sm sm:text-base text-gray-400">Experience</p>
           </div>
         </div>
       </div>
-      <img src="./MainFrame.png" class="h-28 hidden sm:block sm:h-40 md:h-60 lg:h-72 xl:h-80" />
+      <img
+        src="./MainFrame.png"
+        class="h-28 hidden sm:block sm:h-40 md:h-60 lg:h-72 xl:h-80"
+      />
     </div>
 
-    <div class="my-20">
+    <div class="my-16">
       <div class="text-center">
-        <p class="text-xl sm:text-3xl font-bold">Explore our Products</p>
+        <p style="font-family: 'Source Serif 4', serif;" class="text-xl sm:text-3xl font-bold">Explore our Products</p>
         <p class="text-gray-500">
           Explore our wide range of products and services
         </p>
@@ -94,10 +136,11 @@
 
       <div class="flex justify-center">
         <div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-5 gap-2">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-5 gap-2"
+          >
             <div class="relative">
               <img
-               
                 src="./product Img1.png"
                 class="w-80 h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-lg"
               />
@@ -128,7 +171,6 @@
 
             <div class="relative">
               <img
-                
                 src="./product Img3.png"
                 class="w-80 h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-lg"
               />
@@ -144,7 +186,6 @@
 
             <div class="relative">
               <img
-                
                 src="./product Img4.png"
                 class="w-80 h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-lg"
               />
@@ -168,8 +209,8 @@
     </div>
 
     <div>
-      <div class="text-center mt-10">
-        <p class="text-xl sm:text-3xl font-bold">Market Today</p>
+      <div class="text-center">
+        <p style="font-family: 'Source Serif 4', serif;" class="text-xl sm:text-3xl font-bold">Market Today</p>
         <p class="text-gray-500 my-4">
           Explore our wide range of products and services
         </p>
@@ -178,15 +219,16 @@
       <div class="flex justify-center">
         <div class="border overflow-x-auto w-10/12 p-5 rounded-xl">
           <table class="table-auto w-full">
-            <thead class="bg-gray-100">
-              <th class="px-3 py-1 text-left">Assets</th>
-              <th class="">LTP (&#x20B9;)</th>
-              <th class="">Price Change%</th>
-              <th class="">Volume</th>
-              <th class="text-right">Sector (&#x20B9;)</th>
-              <th class="text-right">Market Cap (M)</th>
-              <th class="px-3 py-1 text-right">Risk Score</th>
+            <thead class="text-gray-500 bg-gray-100">
+              <th class="font-normal px-3 py-1 text-left">Assets</th>
+              <th class="font-normal">LTP (&#x20B9;)</th>
+              <th class="font-normal">Price Change%</th>
+              <th class="font-normal">Volume</th>
+              <th class="text-right font-normal">Sector (&#x20B9;)</th>
+              <th class="text-right font-normal">Market Cap (M)</th>
+              <th class="px-3 py-1 text-right font-normal">Risk Score</th>
             </thead>
+            
 
             <tbody>
               <tr class="border-b">
@@ -198,10 +240,10 @@
                     <p>(1.27%)</p>
                   </div>
                 </td>
-                <td class="text-center">52,345,000</td>
-                <td class="text-right">IT</td>
+                <td class="text-gray-500 text-center">52,345,000</td>
+                <td class="text-gray-600 text-right">IT</td>
                 <td class="text-right">2,800</td>
-                <td class="text-right px-3">3</td>
+                <td class="text-gray-600 text-right px-3">3</td>
               </tr>
 
               <tr class="border-b py-3">
@@ -213,10 +255,10 @@
                     <p>(1.27%)</p>
                   </div>
                 </td>
-                <td class="text-center">52,345,000</td>
-                <td class="text-right">IT</td>
+                <td class="text-gray-500 text-center">52,345,000</td>
+                <td class="text-gray-600 text-right">IT</td>
                 <td class="text-right">2,800</td>
-                <td class="text-right px-3">3</td>
+                <td class="text-gray-600 text-right px-3">3</td>
               </tr>
 
               <tr class="border-b py-3">
@@ -228,10 +270,10 @@
                     <p>(1.27%)</p>
                   </div>
                 </td>
-                <td class="text-center">52,345,000</td>
-                <td class="text-right">IT</td>
+                <td class="text-gray-500 text-center">52,345,000</td>
+                <td class="text-gray-600 text-right">IT</td>
                 <td class="text-right">2,800</td>
-                <td class="text-right px-3">3</td>
+                <td class="text-gray-600 text-right px-3">3</td>
               </tr>
 
               <tr class="border-b py-3">
@@ -243,25 +285,25 @@
                     <p>(1.27%)</p>
                   </div>
                 </td>
-                <td class="text-center">52,345,000</td>
-                <td class="text-right">IT</td>
+                <td class="text-gray-500 text-center">52,345,000</td>
+                <td class="text-gray-600 text-right">IT</td>
                 <td class="text-right">2,800</td>
-                <td class="text-right px-3">3</td>
+                <td class="text-gray-600 text-right px-3">3</td>
               </tr>
 
               <tr class="border-b py-3">
                 <td class="pl-3 pr-20">Apple (AAPL)</td>
-                <td class="text-center">20.94</td>
+                <td class=" text-center">20.94</td>
                 <td class="text-center py-3">
                   <div class="text-red-500 font-semibold">
                     <p>-270.00</p>
                     <p>(1.27%)</p>
                   </div>
                 </td>
-                <td class="text-center">52,345,000</td>
-                <td class="text-right">IT</td>
+                <td class="text-gray-500 text-center">52,345,000</td>
+                <td class="text-gray-600 text-right">IT</td>
                 <td class="text-right">2,800</td>
-                <td class="text-right px-3">3</td>
+                <td class="text-gray-600 text-right px-3">3</td>
               </tr>
             </tbody>
           </table>
@@ -270,8 +312,8 @@
     </div>
 
     <div class="flex justify-center">
-      <div class="w-10/12 md:w-8/12 my-20">
-        <p class=" text-xl sm:text-3xl text-center font-bold">FAQ</p>
+      <div class="w-10/12 md:w-8/12 my-16">
+        <p style="font-family: 'Source Serif 4', serif;" class="text-xl sm:text-3xl text-center font-bold">FAQ</p>
 
         <div>
           <div class="border-b">
@@ -281,7 +323,9 @@
               </p>
               <button class="text-5xl text-blue-500 font-[400]">+</button>
             </div>
-            <p  class="mb-4 w-auto text-sm sm:text-base mr-10 sm:mr-28 text-gray-500 text-justify">
+            <p
+              class="mb-4 w-auto text-sm sm:text-base mr-10 sm:mr-28 text-gray-500 text-justify"
+            >
               Mutual funds are managed by professional fund managers who
               regularly monitor market trends and economic trends for taking
               investment decisions. They also have dedicated research
@@ -306,7 +350,7 @@
           </div>
 
           <div class="flex border-b items-center justify-between">
-            <p class="font-semibold">Tax Advantage</p>
+            <p class="font-semibold">Tax Advantages</p>
             <button class="text-5xl font-[400]">+</button>
           </div>
 
@@ -318,7 +362,10 @@
       </div>
     </div>
 
-    <div class="sm:flex justify-between p-6 md:p-10" style="background-color: #080808">
+    <div
+      class="sm:flex justify-between p-6 md:p-10"
+      style="background-color: #080808"
+    >
       <div>
         <img class="h-10" src="./footer.png" />
 
@@ -328,7 +375,9 @@
           <p class="text-gray-400">For customer care</p>
           <p class="text-white">order@nerve.com</p>
 
-          <p class="text-gray-400 mt-5 w-auto text-sm sm:text-base sm:w-8/12 md:w-5/12">
+          <p
+            class="text-gray-400 mt-5 w-auto text-sm sm:text-base sm:w-8/12 md:w-5/12"
+          >
             Anticipate a response within 24 hours, if not sooner. For prompt
             assistance, include your order number and provide a clear
             description of your issue. We’re here to help!
@@ -340,7 +389,7 @@
               <p class="text-gray-400">Store,refund and return policy</p>
               <p class="text-gray-400">Privacy policy</p>
             </div>
-    
+
             <div class="ml-20">
               <p class="text-white">Products</p>
               <p class="text-gray-400">Algo trading</p>
@@ -350,7 +399,7 @@
             </div>
           </div>
 
-          <img style="height: 46px;" class="  " src="./footer company.png"/>
+          <img style="height: 46px" class="  " src="./footer company.png" />
 
           <p class="text-gray-400">Am Enterprises 273425446SSSFW4C1ZK</p>
         </div>
